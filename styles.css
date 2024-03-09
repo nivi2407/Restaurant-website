@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:wght@200&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+.font{
+    font-family: "Caveat", cursive;
+}
+.pink{
+    color: #d52ba7;
+}
+.dark-blue{
+    background-color: rgb(41, 41, 60);
+}
