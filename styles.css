@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:wght@200&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+  
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
@@ -12,4 +16,76 @@ body{
 }
 .dark-blue{
     background-color: rgb(41, 41, 60);
+}
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+.carousel-caption {
+    z-index: 2;
+}
+
+.bg-danger:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.menu-card {
+    overflow: hidden;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+}
+.chef-card {
+    background: #fff;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    transition: 0.35s ease;
+    cursor: pointer;
+}
+
+.chef-card img {
+    transition: transform 0.4s ease;
+}
+
+.chef-card:hover img {
+    transform: scale(1.1);
+}
+
+.chef-card:hover {
+    transform: translateY(-8px);
+}
+
+.chef-info {
+    padding: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons i {
+    font-size: 1.4rem;
+    color: #555;
+    transition: 0.3s;
+}
+
+.instagram-gradient {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.instagram-gradient:hover {
+    transform: scale(1.2);
 }

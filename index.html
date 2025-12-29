@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -26,9 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="restaurant-navbar">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item px-1">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
+                    
                     <li class="nav-item px-1">
                         <a href="#about" class="nav-link">About</a>
                     </li>
@@ -93,33 +90,50 @@
         <div class="container">
             <div class="grid">
                 <div class="row">
-                    <div class="col-md-3 bg-danger text-white p-3">
-                        <h3>Why Choose Yummy Junction?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed
-                            et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
-                        <button class="btn bg-warning">Learn More &#8811; </button>
+                    <div class="col-md-3">
+                        <div class="bg-danger text-white p-4 rounded-4 shadow-lg h-100 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">
+                                Why Choose <span class="text-warning">Yummy Junction?</span>
+                            </h3>
+                    
+                            <p class="flex-grow-1">
+                                At Yummy Junction, we blend fresh ingredients, authentic recipes, and a passion for great food to create
+                                unforgettable dining experiences that keep you coming back for more.
+                            </p>
+                    
+                            <button class="btn btn-warning fw-semibold align-self-start mt-2">Learn More &#8811;</button>
+                               
+                            </button>
+                        </div>
                     </div>
+                    
+                    
                     <div class="col-md-3 text-center">
-                        <span class="fa-3x">&#x1F90C;</span>
-                        <p class="h3 font fw-bold my-2">HandPicked Items</p>
-                        <p class="lead fst-italic">Indulge in our carefully curated selection of handpicked items, each
-                            chosen to tantalize your taste buds and delight your senses. </p>
+                        <i class="fas fa-leaf fa-3x text-success"></i>
+                        <p class="h3 font fw-bold my-2">Handpicked Ingredients</p>
+                        <p class="lead fst-italic">
+                            We carefully select the freshest, highest-quality ingredients to ensure every dish bursts with natural flavor
+                            and goodness.
+                        </p>
                     </div>
+                    
                     <div class="col-md-3 text-center">
-                        <span class="fa-3x">&#129505;</span>
+                        <i class="fas fa-heart fa-3x text-danger"></i>
                         <p class="h3 font fw-bold my-2">Made with Love</p>
-                        <p class="lead fst-italic">Every dish is made with love and passion that not only satisfy your
-                            hunger but also warm your soul to create a culinary masterpieces. </p>
+                        <p class="lead fst-italic">
+                            Every recipe is prepared with passion and care, turning simple meals into comforting moments worth savoring.
+                        </p>
                     </div>
+                    
                     <div class="col-md-3 text-center">
-                        <span class="fa-3x">&#128523;</span>
-                        <p class="h3 font fw-bold my-2"> Delicious Food</p>
-                        <p class="lead fst-italic">From savory appetizers to mouthwatering entrees and decadent
-                            desserts, each dish is expertly crafted to showcase the finest ingredients and culinary
-                            techniques.</p>
+                        <i class="fas fa-utensils fa-3x text-warning"></i>
+                        <p class="h3 font fw-bold my-2">Delicious Food</p>
+                        <p class="lead fst-italic">
+                            From flavorful starters to indulgent desserts, our menu is designed to satisfy every craving with expert
+                            craftsmanship.
+                        </p>
                     </div>
-
+                    
 
                 </div>
             </div>
@@ -134,15 +148,10 @@
                     <div class="row text-white align-items-center">
                         <div class="col-md-6">
                             <p class="h2 font fw-bold">Gourmat <span class="text-warning">Pizza</span></p>
-                            <p class="lead fst-italic">Explore our diverse selection of gourmet pizzas, featuring
-                                classic favorites and innovative flavor combinations that are sure to tantalize your
-                                taste buds. Whether you're craving a traditional Margherita pizza with fresh basil and
-                                ripe tomatoes, or you're feeling adventurous with our signature BBQ Chicken Pizza topped
-                                with tangy barbecue sauce and tender chicken, there's something for every pizza lover to
-                                enjoy.</p>
+                            <p class="lead fst-italic">Dive into the art of our artisan sourdough Margherita pizza, where a perfectly tangy, chewy crust meets rich tomato sauce and creamy mozzarella as it rotates to a golden finish in a blistering hot oven. Watch the heat kiss every bubble and char on the dough, bringing out that classic Italian flavor with fresh basil and olive oil that makes every slice irresistible. Whether you’re craving a timeless favorite or just love watching perfection in motion, this pizza experience brings joy to every pizza lover’s palate.</p>
                         </div>
                         <div class="col-md-6">
-                            <video controls autoplay class="img-fluid">
+                            <video controls autoplay muted loop class="img-fluid">
                                 <source src="media/1.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -156,16 +165,13 @@
                 <div class="grid">
                     <div class="row align-items-center">
                         <div class="col-md-6">
-                            <video controls autoplay class="img-fluid">
+                            <video controls autoplay muted loop class="img-fluid">
                                 <source src="media/2.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="col-md-6">
                             <p class="h2 font fw-bold">Pasta <span class="text-warning">Palooza</span></p>
-                            <p class="lead fst-italic">Experience the authentic flavors of Italy with our tantalizing
-                                pasta menu. From timeless favorites like Spaghetti Carbonara and Fettuccine Alfredo to
-                                innovative creations like Lobster Ravioli and Truffle Mac and Cheese, each dish is
-                                crafted with care using the finest imported pasta and locally sourced ingredients.</p>
+                            <p class="lead fst-italic">Savor the vibrant flavors of Italy with our signature rigatoni pasta, bathed in a rich, slow-simmered tomato sauce and finished with just the right touch of herbs and olive oil. Watch each perfectly shaped tube hold every bit of flavor, delivering comfort and sophistication in every bite. Whether you’re craving the bold simplicity of classic Italian tomato sauce or exploring our elevated pasta creations, this dish brings authentic Italian goodness straight to your table.</p>
                         </div>
                     </div>
                 </div>
@@ -177,15 +183,10 @@
                     <div class="row text-white align-items-center">
                         <div class="col-md-6">
                             <p class="h2 font fw-bold">Dessert <span class="text-warning">Delight</span></p>
-                            <p class="lead fst-italic">Explore our tantalizing selection of desserts, featuring classic
-                                favorites and innovative creations that are sure to delight your senses. Whether you're
-                                in the mood for a heavenly slice of chocolate cake, a refreshing fruit tart, or a creamy
-                                tiramisu, our Dessert Delight menu offers something for every dessert lover.Indulge in
-                                the ultimate sweet escape and satisfy your cravings with our irresistible selection of
-                                desserts.</p>
+                            <p class="lead fst-italic">Indulge in the irresistible elegance of our decadent chocolate cake as it’s finished with a light dusting of powdered sugar, creating a beautiful contrast against the rich, velvety layers beneath. Each gentle sprinkle adds a touch of sweetness and visual flair, highlighting the care and craftsmanship in every slice. Whether you’re craving a classic dessert moment or celebrating something special, this luscious chocolate creation promises to satisfy every sweet tooth.</p>
                         </div>
                         <div class="col-md-6">
-                            <video controls autoplay class="img-fluid">
+                            <video controls autoplay muted loop class="img-fluid">
                                 <source src="media/3.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -196,97 +197,114 @@
     </section>
     
     <!--Menus-->
-    <section id="menus">
+    <section id="menus" class="py-5">
         <div class="container">
-            <div class="grid my-4 p-3">
-                <h2 class="text-center text-success display-2 font p-2">Menus</h2>
-                <div class="row">
-                    <img src="media/1.png" alt="category1" class="col-md-4 p-4 rounded-pill">
-                    <img src="media/2.png" alt="category1" class="col-md-4 p-4 rounded-pill">
-                    <img src="media/3.png" alt="category1" class="col-md-4 p-4 rounded-pill">
-                    <img src="media/4.png" alt="category1" class="col-md-4 p-4 rounded-pill">
-                    <img src="media/5.png" alt="category1" class="col-md-4 p-4 rounded-pill">
-                    <img src="media/6.png" alt="category1" class="col-md-4 p-4 rounded-pill">
+            <h2 class="text-center text-success display-4 fw-bold mb-5">
+                Our <span class="text-warning">Menus</span>
+            </h2>
+    
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="media/1.png" alt="Main Course" class="img-fluid rounded-pill">
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="media/2.png" alt="Salad" class="img-fluid rounded-pill">
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="media/3.png" alt="Pasta" class="img-fluid rounded-pill">
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="media/4.png" alt="Pizza" class="img-fluid rounded-pill">
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="media/5.png" alt="Desserts" class="img-fluid rounded-pill">
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="media/6.png" alt="Drinks" class="img-fluid rounded-pill">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Chefs -->
-    <section class="chefs p-5 bg-secondary" id="chefs">
+    
+    <section class="chefs py-5 bg-secondary" id="chefs">
         <div class="container">
-            <div class="grid">
-                <div class="row mt-5">
-                    <div class="col-md-3 rounded-5">
-                        <div class="card shadow-lg my-2">
-                            <img src="media/chef1.jpg" alt="" class="img-fluid">
-                            <div class="card-body">
-                                <p class="h4 card-title fw-bold">Name</p>
-                                <p class="font text-muted">Position</p>
-                                <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-                                    facilis itaque iusto nemo quam rerum?</p>
-                                    <hr class="border-success">
-                                <div class="d-flex justify-content-around">
-                                    
-                                    <i class="fab fa-facebook text-primary fa-2x"></i>
-                                    <i class="fab fa-twitter text-info fa-2x"></i>
-                                    <i class="fab fa-youtube text-danger fa-2x"></i>
-                                    <i class="fab fa-instagram pink fa-2x"></i>
-                                </div>
+            <h2 class="text-center text-white display-4 fw-bold mb-5">
+                Meet Our <span class="text-warning">Chefs</span>
+            </h2>
+    
+            <div class="row g-4 justify-content-center">
+                <!-- Chef 1 -->
+                <div class="col-md-4">
+                    <div class="chef-card h-100">
+                        <img src="media/chef1.jpg" alt="Head Chef" class="img-fluid">
+                        <div class="chef-info text-center">
+                            <h5 class="fw-bold mb-1">Chef Marco</h5>
+                            <small class="text-muted">Head Chef</small>
+                            <p class="fst-italic mt-2">
+                                Crafting bold flavors with passion and precision.
+                            </p>
+                            <div class="social-icons">
+                                <i class="fa-brands fa-facebook text-primary"></i>
+                                <i class="fa-brands fa-twitter text-info"></i>
+                                <i class="fa-brands fa-instagram instagram-gradient"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 rounded-5">
-                        <div class="card shadow-lg my-2">
-                            <img src="media/chef2.jpg" alt="" class="img-fluid">
-                            <div class="card-body">
-                                <p class="h4 card-title fw-bold">Name</p>
-                                <p class="font text-muted">Position</p>
-                                <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-                                    facilis itaque iusto nemo quam rerum?</p>
-                                    <hr class="border-success">
-                                <div class="d-flex justify-content-around">
-                                    <i class="fab fa-facebook text-primary fa-2x"></i>
-                                    <i class="fab fa-twitter text-info fa-2x"></i>
-                                    <i class="fab fa-youtube text-danger fa-2x"></i>
-                                    <i class="fab fa-instagram pink fa-2x"></i>
-                                </div>
+                </div>
+    
+                <!-- Chef 2 -->
+                <div class="col-md-4">
+                    <div class="chef-card h-100">
+                        <img src="media/chef2.jpg" alt="Sous Chef" class="img-fluid">
+                        <div class="chef-info text-center">
+                            <h5 class="fw-bold mb-1">Chef Maya</h5>
+                            <small class="text-muted">Sous Chef</small>
+                            <p class="fst-italic mt-2">
+                                Blending creativity and comfort on every plate.
+                            </p>
+                            <div class="social-icons">
+                                <i class="fa-brands fa-facebook text-primary"></i>
+                                <i class="fa-brands fa-twitter text-info"></i>
+                                <i class="fa-brands fa-instagram instagram-gradient"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 rounded-5">
-                        <div class="card shadow-lg my-2">
-                            <img src="media/chef3.jpg" alt="" class="img-fluid">
-                            <div class="card-body">
-                                <p class="h4 card-title fw-bold">Name</p>
-                                <p class="font text-muted">Position</p>
-                                <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-                                    facilis itaque iusto nemo quam rerum?</p>
-                                    <hr class="border-success">
-                                <div class="d-flex justify-content-around">
-                                    <i class="fab fa-facebook text-primary fa-2x"></i>
-                                    <i class="fab fa-twitter text-info fa-2x"></i>
-                                    <i class="fab fa-youtube text-danger fa-2x"></i>
-                                    <i class="fab fa-instagram pink fa-2x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 rounded-5">
-                        <div class="card shadow-lg my-2">
-                            <img src="media/chef4.jpg" alt="" class="img-fluid">
-                            <div class="card-body">
-                                <p class="h4 card-title fw-bold">Name</p>
-                                <p class="font text-muted">Position</p>
-                                <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-                                    facilis itaque iusto nemo quam rerum?</p>
-                                    <hr class="border-success">
-                                <div class="d-flex justify-content-around">
-                                    <i class="fab fa-facebook text-primary fa-2x"></i>
-                                    <i class="fab fa-twitter text-info fa-2x"></i>
-                                    <i class="fab fa-youtube text-danger fa-2x"></i>
-                                    <i class="fab fa-instagram pink fa-2x"></i>
-                                </div>
+                </div>
+    
+                <!-- Chef 3 -->
+                <div class="col-md-4">
+                    <div class="chef-card h-100">
+                        <img src="media/chef3.jpg" alt="Pastry Chef" class="img-fluid">
+                        <div class="chef-info text-center">
+                            <h5 class="fw-bold mb-1">Chef Luca</h5>
+                            <small class="text-muted">Pastry Chef</small>
+                            <p class="fst-italic mt-2">
+                                Creating desserts that end every meal perfectly.
+                            </p>
+                            <div class="social-icons">
+                                <i class="fa-brands fa-facebook text-primary"></i>
+                                <i class="fa-brands fa-twitter text-info"></i>
+                                <i class="fa-brands fa-instagram instagram-gradient"></i>
                             </div>
                         </div>
                     </div>
@@ -294,11 +312,12 @@
             </div>
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="footer dark-blue p-5" id="contact">
         <div class="container">
-            <div class="grid">
+            
                 <div class="row align-items-center">
                     <div class="col-md-4 text-light">
                         <p>Copyright ©</p>
@@ -326,7 +345,7 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            
         </div>
     </footer>
 </body>
